@@ -10,10 +10,10 @@ lt2 rt2<br />
 ...<br />
 The default size of the vocabulary is 10,000<br />
 ## Commands
-python3 a1.py ––learn_bpe ––inpath {path to input text} ––
+python a1.py ––learn_bpe ––inpath {path to input text} ––
 outpath {path to output text} ––vocab {path to vocab file}
 ––vocab_size {size}<br /><br />
 The above command will learn the BPE merge operations. Given a training text specified by the ––inpath argument (e.g., trn), it generates the BPE-tokenized text in the output file specified by the ––outpath argument (e.g., bpe_trn) and outputs the list of ordered merge operations in the file specified by the ––vocab argument (e.g., voc). The size of the vocabulary to be learned is specified by the ––vocab_size argument, which will default to 10,000 if this argument is not specified.<br /><br />
-python3 a1.py ––apply_bpe ––inpath {path to input text} ––
+python a1.py ––apply_bpe ––inpath {path to input text} ––
 outpath {path to output text} ––vocab {path to vocab file}<br /><br />
 The above command will apply the BPE merge operations specified by the ––vocab argument (e.g., voc). Given a text specified by the ––inpath argument (e.g., tst), it generates the BPE-tokenized text in the output file specified by the ––outpath argument (e.g., bpe_tst) based on the merge operations specified by the ––vocab argument
